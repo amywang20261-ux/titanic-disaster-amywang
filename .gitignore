@@ -13,7 +13,6 @@ venv/
 
 # VS Code
 .vscode/
-
 # Project-specific (generated or large)
-src/data
+src/data/
 *.db
