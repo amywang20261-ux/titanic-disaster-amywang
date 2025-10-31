@@ -10,10 +10,12 @@
 renv/
 .packrat/
 
+# =========================
 # Python
+# =========================
 __pycache__/
 *.pyc
 
 # Outputs we don’t want in Git
-src/data
+src/data/
 *.db
