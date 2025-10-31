@@ -1,19 +1,59 @@
-# macOS
+# =========================
+# OS / Editor cruft
+# =========================
 .DS_Store
+.vscode/
+.idea/
+.ipynb_checkpoints/
 
+# =========================
 # Python
+# =========================
 __pycache__/
 *.py[cod]
 .venv/
 venv/
+env/
 .env
 
-# Jupyter
-.ipynb_checkpoints/
+# =========================
+# R
+# (track renv.lock if you have one, but ignore local libs/caches)
+# =========================
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+renv/cache/
+renv/staging/
 
-# VS Code
-.vscode/
-
-# Project-specific (generated or large)
+# =========================
+# DATA (do NOT commit datasets)
+# keep a placeholder so the folder exists
+# =========================
 src/data/
+!src/data/.gitkeep
+
+# If someone drops data outside src/data, still ignore common formats
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.xlsx
+*.xls
 *.db
+*.sqlite
+*.h5
+*.pkl
+*.rds
+*.rda
+*.sav
+
+# =========================
+# Outputs / logs / artifacts
+# =========================
+outputs/
+reports/
+logs/
+*.log
+predictions.csv
