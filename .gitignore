@@ -57,3 +57,7 @@ reports/
 logs/
 *.log
 predictions.csv
+
+# ignore datasets but keep the folder
+src/data/
+!src/data/.gitkeep
