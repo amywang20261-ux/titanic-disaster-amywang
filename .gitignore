@@ -1,11 +1,11 @@
-# OS / editor
+# OS cruft
 .DS_Store
-.vscode/
+Thumbs.db
+
+# Jupyter
 .ipynb_checkpoints/
 
-# =========================
-# Python
-# =========================
+# Python bytecode
 __pycache__/
 *.py[cod]
 .venv/
