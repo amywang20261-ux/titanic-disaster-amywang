@@ -1,19 +1,19 @@
-# macOS
+# OS / editor
 .DS_Store
+.vscode/
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+renv/
+.packrat/
 
 # Python
 __pycache__/
-*.py[cod]
-.venv/
-venv/
-.env
+*.pyc
 
-# Jupyter
-.ipynb_checkpoints/
-
-# VS Code
-.vscode/
-
-# Project-specific (generated or large)
+# Outputs we don’t want in Git
 src/data
 *.db
