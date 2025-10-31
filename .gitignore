@@ -3,12 +3,26 @@
 .vscode/
 .ipynb_checkpoints/
 
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+
+# =========================
 # R
+# (track renv.lock if you have one, but ignore local libs/caches)
+# =========================
 .Rhistory
 .RData
 .Rproj.user/
-renv/
-.packrat/
+renv/library/
+renv/cache/
+renv/staging/
 
 # =========================
 # Python
@@ -18,4 +32,32 @@ __pycache__/
 
 # Outputs we don’t want in Git
 src/data/
+!src/data/.gitkeep
+
+# If someone drops data outside src/data, still ignore common formats
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.xlsx
+*.xls
 *.db
+*.sqlite
+*.h5
+*.pkl
+*.rds
+*.rda
+*.sav
+
+# =========================
+# Outputs / logs / artifacts
+# =========================
+outputs/
+reports/
+logs/
+*.log
+predictions.csv
+
+# ignore datasets but keep the folder
+src/data/
+!src/data/.gitkeep
