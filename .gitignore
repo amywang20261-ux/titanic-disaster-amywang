@@ -15,6 +15,9 @@ __pycache__/
 venv/
 env/
 .env
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
 
 # =========================
 # R
@@ -23,6 +26,7 @@ env/
 .Rhistory
 .RData
 .Rproj.user/
+.Rprofile
 renv/library/
 renv/cache/
 renv/staging/
@@ -56,8 +60,3 @@ outputs/
 reports/
 logs/
 *.log
-predictions.csv
-
-# ignore datasets but keep the folder
-src/data/
-!src/data/.gitkeep
