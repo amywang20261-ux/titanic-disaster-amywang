@@ -1,63 +1,28 @@
-# OS / editor
+# OS cruft
 .DS_Store
-.vscode/
+Thumbs.db
+
+# Jupyter
 .ipynb_checkpoints/
 
-# =========================
-# Python
-# =========================
+# Python bytecode
 __pycache__/
 *.py[cod]
+
+# Virtual environments
 .venv/
 venv/
 env/
+renv/
+
+# Env config files
 .env
+.python-version
 
-# =========================
-# R
-# (track renv.lock if you have one, but ignore local libs/caches)
-# =========================
-.Rhistory
-.RData
-.Rproj.user/
-renv/library/
-renv/cache/
-renv/staging/
-
-# =========================
-# Python
-# =========================
-__pycache__/
-*.pyc
-
-# Outputs we don’t want in Git
-src/data/
-!src/data/.gitkeep
-
-# If someone drops data outside src/data, still ignore common formats
-*.csv
-*.tsv
-*.parquet
-*.feather
-*.xlsx
-*.xls
-*.db
-*.sqlite
-*.h5
-*.pkl
-*.rds
-*.rda
-*.sav
-
-# =========================
-# Outputs / logs / artifacts
-# =========================
-outputs/
-reports/
-logs/
-*.log
-predictions.csv
-
-# ignore datasets but keep the folder
-src/data/
+# Do NOT commit datasets
+src/data/train.csv
+src/data/test.csv
+src/data/predictions_r.csv
+src/data/predictions.csv
+# Keep the folder
 !src/data/.gitkeep
